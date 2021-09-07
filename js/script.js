@@ -6,7 +6,7 @@ const cuponTotal = document.getElementById("promo-total");
 const apply = document.getElementById("apply");
 const IMacPrice = 1299;
 const promoCode = "stevekaku";
-const discValue = 0.2;
+const discValue = 20;
 // update iMAC price
 function updateImacPrice(IDNAME) {
   document.getElementById(IDNAME).innerText = IMacPrice;
@@ -66,4 +66,4 @@ function discControl(idName, eventClick, codeFieldID, discAmountID) {
   });
 }
 
-discControl("apply", "click", "cupon-field", "disc_amount")
+discControl("apply", "click", "cupon-field", "disc_amount");
